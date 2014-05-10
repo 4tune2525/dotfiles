@@ -1,0 +1,8 @@
+
+((digest . "872615e61e8f99f68a5b67282ee280ce") (undo-list nil ("
+gem	'knife-solo',
+	:github => 'matschaffer/knife-solo',
+	:branch => 'master',
+	:submodules => true
+" . -48) (t 21351 6253 0 0) ((marker) . -19) ((marker) . -19) ((marker) . -1) ((marker) . -1) ((marker) . -57) ((marker) . -57) ((marker) . -79) ((marker) . -79) ((marker) . -100) nil (13 . 14) (t 21351 6036 0 0) nil ("s" . -13) (t 21351 979 0 0) nil (47 . 48) nil (46 . 47) nil (45 . 46) nil (44 . 45) nil (43 . 44) nil (42 . 43) nil (41 . 42) nil (40 . 41) nil (39 . 40) nil (38 . 39) nil (37 . 38) nil (36 . 37) nil (35 . 36) nil (34 . 35) nil (33 . 34) nil (32 . 33) (t 21351 942 0 0) nil ("g" . -32) nil ("e" . -33) nil ("m" . -34) nil (" " . -35) nil ("'" . -36) nil ("b" . -37) nil ("e" . -38) nil ("r" . -39) nil ("k" . -40) nil ("s" . -41) nil ("h" . -42) nil ("e" . -43) nil ("l" . -44) nil ("f" . -45) nil ("'" . -46) nil ("
+" . -47) (t 21351 479 0 0) ((marker) . -1) ((marker) . -1) nil (49 . 52) nil (47 . 48) nil ("," . -47) (t 21350 65465 571073 500000) nil (125 . 144) nil (124 . 125) nil (123 . 124) nil (111 . 123) nil ("_" . -111) nil (103 . 112) nil (102 . 103) nil (101 . 102) nil (94 . 101) nil (74 . 94) nil ("." . -74) nil (73 . 75) nil ("_" . -73) nil (71 . 74) nil ("v" . -71) nil (65 . 72) nil (64 . 65) nil (63 . 64) nil (50 . 63) nil (49 . 50) nil (48 . 49) nil (47 . 48) (t 21349 63744 448572 400000)))

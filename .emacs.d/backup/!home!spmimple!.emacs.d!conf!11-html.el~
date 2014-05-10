@@ -1,0 +1,2 @@
+;;change html-mode nxml-mode
+(add-to-list 'auto-mode-alist '("\\.[sx]?html?\\(\\.[a-zA-Z_]+\\)?\\'" . nxml-mode))

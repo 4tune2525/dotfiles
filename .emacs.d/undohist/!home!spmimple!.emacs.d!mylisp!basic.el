@@ -1,0 +1,2 @@
+
+((digest . "99a08146d47e15e859954fffe1e2b14f") (undo-list nil (#("[" 0 1 (fontified t)) . -421) ((marker . 1695) . -1) ((marker . 382) . -1) nil (421 . 422) nil (#("1" 0 1 (fontified t)) . -430) nil (#("8" 0 1 (fontified t)) . -431) nil (#("~" 0 1 (fontified t)) . -432) nil (430 . 433) nil (#("1" 0 1 (fontified t)) . -430) nil (#("8" 0 1 (fontified t)) . -431) nil (#("~" 0 1 (fontified t)) . -432) nil (430 . 433) nil (#("t" 0 1 (fontified t)) . -513) nil (#("o" 0 1 (fontified t)) . -514) nil (513 . 515) (t 21342 13506 387532 400000)))
