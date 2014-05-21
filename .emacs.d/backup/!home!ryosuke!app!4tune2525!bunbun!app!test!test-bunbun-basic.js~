@@ -1,0 +1,103 @@
+TestCase("Test isArray",{
+	"test should return which array is.":function(){
+		var isArray = bbb.isArray;
+		var obj = {};
+		var ar = [1,2,3];
+
+		assertFalse(isArray(obj));
+		assertTrue(isArray(ar));
+		assertFalse(isArray(void 0));
+
+		assertEquals({},obj);
+		assertEquals([1,2,3],ar);
+	}
+  
+});
+
+TestCase("Test each",{
+	"test should type of each's argument is object and function and context.":function(){
+		var each = bbb.each;
+
+		var obj = {};
+		var ar = [1,2,3];
+
+		var result = [];
+		var func = function(x){
+			x *= 2;
+			result.push(x);
+		};
+
+		assertUndefined(each());
+		assertUndefined(each(ar,ar));
+		
+		each(ar,func);
+		assertEquals([2,4,6],result);
+	},
+
+	"test should each do iteration on context":function(){
+		var each = bbb.each;
+
+		var obj = {
+			func:function(x){
+				if(this.result){
+					this.result.push(x*2);
+				}
+			},
+
+			result:[]
+		};
+
+		each([1,2,3],obj.func);
+
+		assertNotEquals([2,4,6],obj.result);
+
+		each([1,2,3],obj.func,obj);
+
+		assertEquals([2,4,6],obj.result);
+
+	}
+});
+
+TestCase("Test mapper",{
+	"test should mapper need array and function as arguments.":function(){
+		var mapper = bbb.mapper;
+
+		var obj = {};
+		var ar = [1,2,3];
+
+		var result = [];
+		var iterator = function(x){
+			x *= 2;
+			result.push(x);
+		};
+		
+		assertEquals([void 0,void 0,void 0],mapper(obj,iterator));
+		assertEquals([void 0,void 0,void 0],mapper(ar,obj));
+	},
+
+	"test should mapper return array by doing iteration.":function(){
+		var mapper = bbb.mapper;
+
+		var ar = [1,2,3];
+
+		var result = [];
+		var iterator = function(x){
+			x *= 2;
+			return x;
+		};
+		var obj = {
+			func:function(x){
+				if(this.result){
+					x += this.result;
+					return  x;
+				}
+				return void 0;
+			},
+			result:3
+		};
+		
+		assertEquals([2,4,6],mapper(ar,iterator));
+		assertEquals([4,5,6],mapper(ar,obj.func,obj));
+
+	}
+});

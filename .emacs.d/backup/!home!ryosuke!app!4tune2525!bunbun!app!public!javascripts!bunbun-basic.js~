@@ -1,0 +1,35 @@
+var bbb = {};
+
+(function(){
+
+	function isArray(ar){
+		return Object.prototype.toString.call(ar) === '[object Array]';
+	}
+	
+	function each(ar,iterator,context){
+		if(!(isArray(ar)) || (typeof iterator !== 'function')){
+			return;
+		}
+
+		for(var i=0 ; i<ar.length ; i++){
+			if(context){
+				iterator.call(context,ar[i],i,ar);
+			}else{
+				iterator(ar[i],i,ar);
+			}
+		}
+	}
+
+	function mapper(){
+		each(ar,function(value, index, list){
+			
+		});
+			
+	}
+
+	
+	
+	bbb.isArray = isArray;
+	bbb.each = each;
+
+})();

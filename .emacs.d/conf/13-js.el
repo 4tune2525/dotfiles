@@ -1,3 +1,6 @@
+;;(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 (defun js-indent-hook ()
   (setq js-indent-level 2
 		js-expr-indent-offset 2
@@ -18,5 +21,5 @@
   (set (make-local-variable 'indent-line-function) 'my-js-indent-line)
   )
 
-(add-hook 'js-mode-hook 'js-indent-hook)
-(add-hook 'js2-mode-hook 'js-indent-hook)
+;;(add-hook 'js-mode-hook 'js-indent-hook)
+;;(add-hook 'js2-mode-hook 'js-indent-hook)

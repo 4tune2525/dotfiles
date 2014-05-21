@@ -1,0 +1,11 @@
+TestCase("Test isArray",{
+  "test should return which array is.":function(){
+    var isArray = bbb.isArray;
+    var obj = {};
+    var ar = [1,2,3];
+
+    assertFalse(obj,isArray(obj));
+    assertTrue(ar,isArray(ar));
+  }
+  
+});
